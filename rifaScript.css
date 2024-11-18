@@ -1,0 +1,69 @@
+/* Estilo para o container geral */
+.conteiner {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para o botão de impressão */
+#printBtn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#printBtn:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para os cartões da rifa */
+.rifa-cards {
+    display: flex;
+    flex-direction: column; /* Faz os cartões ficarem empilhados um abaixo do outro */
+    align-items: center;
+    gap: 15px;
+}
+
+/* Estilo individual para cada cartão */
+.rifa-card {
+    width: 300px; /* Tamanho fixo para cada cartão */
+    padding: 15px;
+    border: 2px solid #333; /* Borda do cartão */
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: left; /* Alinha as informações à esquerda */
+}
+
+/* Estilo para os títulos dentro do cartão */
+.rifa-card h4 {
+    margin: 5px 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo para as informações de cada campo */
+.rifa-card p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Estilo para os textos destacados (como prêmio, valor, etc.) */
+.rifa-card .info {
+    font-weight: bold;
+    color: #4CAF50; /* Verde para destacar informações importantes */
+}
+
+/* Responsividade: ajusta os cartões para telas menores */
+@media (max-width: 600px) {
+    .rifa-card {
+        width: 90%; /* Cartões ocupam mais largura em telas pequenas */
+    }
+}

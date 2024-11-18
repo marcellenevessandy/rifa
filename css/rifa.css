@@ -1,0 +1,110 @@
+/* Reseta algumas propriedades padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definições de cores */
+:root {
+    --cor-azul: #1a2730;
+    --cor-cinza: #424149;
+    --cor-preto: #000;
+    --cor-branco: #fff;
+    --cor-azulCinza: #46586c;
+    --cor-azulClaro: #afcee2;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-azul);
+    color: var(--cor-azulClaro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Estilização do container principal */
+  .conteiner {
+    background-color: var(--cor-azulClaro);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+/* Título do formulário */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--cor-preto);
+}
+
+/* Estilos do formulário */
+form {
+    background-color: var(--cor-azulClaro);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--cor-preto);
+    width: 100%;
+    max-width: 400px;
+    color: var(--cor-preto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para os inputs e rótulos */
+label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+    color: var(--cor-preto);
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--cor-branco);
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus {
+    border-color: var(--cor-cinza);
+    outline: none;
+}
+
+/* Estilização do botão de submit */
+input[type="submit"] {
+    width: 180%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cor-azulCinza);
+    color: var(--cor-branco);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: var(--cor-azulMar);
+  }
+  
+
+/* Estilo de espaçamento entre os campos */
+form br {
+    display: block;
+    margin-bottom: 15px;
+}
